@@ -153,6 +153,8 @@ angular.module('ui.bootstrap.tabs', [])
         } else {
           scope.index = 0;
         }
+      } else {
+        scope.index = attrs.index;
       }
 
       if (angular.isUndefined(attrs.classes)) {
